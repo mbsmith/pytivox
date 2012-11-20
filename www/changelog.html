@@ -1,0 +1,63 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>pyTivoX Changes</title>
+</head>
+<body>
+<h1> Configure Preferences, and hit Apply after installation </h1>
+
+<h2>Changes in 1.3</h2>
+<li> Fixes to make it run correctly under snow leopard. </li>
+<li> Fix for pyTivo failing to pull .tivo files </li>
+<li> StreamBaby will now push different episodes of the same show into a folder </li>
+<li> many pytivo improvements (see pytivo <a href="http://repo.or.cz/w/pyTivo/wmcbrine.git"> (changes) </a>) including the ability to auto-resume transfers.
+
+<h2>Changes in 1.2.1</h2>
+Minor bugfix release.
+<ul>
+<li> pyTivo was attempting to use port 0, fixed </li>
+<li> .tivo files can be pushed/pulled again </li>
+</ul>
+
+<h2>Changes in 1.2</h2>
+<ul>
+<li> Latest version of:
+  <ul>
+    <li> pyTivo:  <a href="http://repo.or.cz/w/pyTivo/wmcbrine.git"> changelog </a> </li>
+    <li> streambaby: <a href="http://code.google.com/p/streambaby/source/list"> changelog </a> </li>
+    <li> ffmpeg : Support many more video formats <a href="http://ffmpeg.mplayerhq.hu/Changelog"> changelog </a> </li>
+  </ul>
+</li>
+<li> New preferences window.  Still need to hit apply after changing preferences. </li>
+<li> pyTivo and streambaby now support <b>push</b> of videos from the computer to any tivo in the house.  You will need to provide your password for <i>http://tivo.com/</i> in order to use it. </li>
+<li> streambaby config: sort by filename or sort by title. </li>
+<li> Support non unicode charsets in pytivo metadata </li>
+<li> Enable more explicit logging to help debug future issues. Logs now under <b><i>user</i>/Library/Logs/pyTivoX</b> </li>
+<li> Streambaby image cache moved to <b><i>user</i>/Library/Cache/pyTivoX/</b> </li>
+<li> Streambaby can now parse more mp4 files to determine if they can be streamed instead of transcoded.
+<li> pyTivoX now ships as a dmg instead of a zip-file </li>
+<li> Streambaby now presents itself as 'pyTivoX - [hostname]' in the photos,music,showcases list (must hit 'apply' for this to take effect) </li>
+<li> bugfix: pytivo should no longer generate errors on very slow/old computers </li>
+<li> bugfix: pytivo should serve music correctly now </li>
+</ul>
+
+<h2>Changes in 1.1</h2>
+<ul>
+<li> Added support for <a href="http://code.google.com/p/streambaby/"> StreamBaby</a>: a streamer that lets you view your recordings directly from your computer without downloading them to the tivo first (only supported by Series 3 and TivoHD).</li>
+<li> swapped to wmcbrine's pyTivo <a href="http://repo.or.cz/w/pyTivo/wmcbrine.git"> (changes) </a> for several fixes and features. </li>
+<li> swapped 'accept' and 'exit' buttons (<i>bedelman</i>)</li>
+<li> new menulet icon (<i>pacoII</i>)</li>
+<li> Latest version of the ffmpeg encoder and associated libraries </li>
+</ul>
+
+<h2>Changes in 1.0.1</h2>
+<ul>
+<li>new version of ffmpeg</li>
+<li>don't include series number in tag</li>
+</ul>
+
+<h2>pyTivoX 1.0</h2>
+<ul><li>  Release version</li></ul>
+</body>

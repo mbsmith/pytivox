@@ -1,0 +1,3 @@
+#!/bin/sh
+export DYLD_LIBRARY_PATH=/Applications/pyTivoX.app/Contents/Resources
+exec "$0.bin" "$@"

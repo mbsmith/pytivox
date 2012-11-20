@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"
+    >
+  <channel>
+    <title>pyTivoX</title>
+    <link>http://pyTivoX.googlecode.com/svn/trunk/www/pytivox.xml</link>
+    <description>Transfer shows from your MAC to your TiVo</description>
+    <language>en-us</language>
+		<item>
+			<title>Version 1.3</title>
+			<sparkle:releaseNotesLink>http://pytivox.googlecode.com/svn/trunk/www/changelog.html</sparkle:releaseNotesLink>
+			<pubDate>Thu, 27 Aug 2009 10:42:17 -0700</pubDate>
+			<enclosure
+				url="http://pytivox.googlecode.com/files/pyTivoX-1.3.dmg"
+				sparkle:version="1.3"
+				type="application/octet-stream"
+				length="18687444"
+				sparkle:dsaSignature="MCwCFGxeIq1W53Rx4OTt4346Bp1go7wUAhROpcHo53rpz7MsfNMOwLjhTXCIRA=="
+			/>
+		</item>
+  </channel>
+</rss>

@@ -1,0 +1,8 @@
+INSTALLATION:
+=============
+To install, drag the pie-icon (pyTivoX) to your Applications folder.
+
+
+RUNNING:
+========
+  Double-click pyTivoX in the Applications folder

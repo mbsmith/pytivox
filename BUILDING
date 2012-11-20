@@ -1,0 +1,13 @@
+To compile, you will need XCode installed.
+
+  First, obtain ffmpeg, and compile it
+  Put the resulting ffmpeg binary into "External Software/ffmpeg"
+  Put the 5 shared libs into "External Software/libavutil.dylib" (etc.. by name)
+
+  Get the python imaging library, and put it in "PIL/"
+  
+  Then load up the project, and build it.  
+
+  The source does not include the distribution key, so build only the "Release" build.  If you want to build a full distribution you will need to get the key from me, or generate your own (in which case, auto-update will refuse your build).
+
+   To read up more on the keys, look at the Sparkle homepage.

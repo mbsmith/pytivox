@@ -35,3 +35,9 @@ please try [the tivocommunity forums](http://www.tivocommunity.com/tivo-vb/showt
 * The package includes [ffmpeg](http://ffmpeg.mplayerhq.hu/) built 10.5-universal.
 * The package also includes a build of the [Python Imaging Library](http://pythonmac.org/packages/py25-fat/index.html).
 * If you want to download shows from your tivo, check out [iTiVo](http://itivo.googlecode.com/) instead.
+
+### Credits
+
+Original Version by Yoav Yerushalmi.
+Includes SS_PrefsController by Matt Gemmell.
+

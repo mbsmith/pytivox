@@ -11,7 +11,7 @@ Download from the right. Copy the pyTivoX program into your applications folder.
 
 ### Screenshots
 
-![Screenshot Here](http://pytivox.googlecode.com/svn/trunk/www/Sample.png "Screenshot")
+![Screenshot Here](https://raw.github.com/mbsmith/pytivox/tree/master/www/Sample.png)
 
 ### Problems / Questions?
 

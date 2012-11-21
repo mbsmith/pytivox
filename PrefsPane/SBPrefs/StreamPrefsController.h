@@ -8,7 +8,6 @@
 
 #import <Cocoa/Cocoa.h>
 #import "MASPreferencesViewController.h"
-#import "Startup.h"
 
-@interface GeneralPrefsPaneController : NSViewController <MASPreferencesViewController>
+@interface StreamPrefsController : NSViewController <MASPreferencesViewController>
 @end

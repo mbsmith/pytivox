@@ -11,16 +11,11 @@
 @implementation MasterProc
 
 -(id) init {
-	_defaults = [[NSUserDefaults standardUserDefaults] retain];
-	typesArray = [[NSArray arrayWithObjects:@"video", @"music", @"photo", @"video:stream", @"video:pytivo", nil] retain];
+	_defaults = [NSUserDefaults standardUserDefaults];
+	typesArray = @[@"video", @"music", @"photo", @"video:stream", @"video:pytivo"];
 	return [super init];
 }
 
--(void) dealloc {
-	[_defaults release];
-	[typesArray release];
-	[super dealloc];
-}
 
 -(void) prekill {}
 
@@ -32,7 +27,6 @@
 		} @catch (id NSInvalidArgumentException) {
 		}
 		[task waitUntilExit];
-		[task dealloc];
 		task = nil;
 	}
 }

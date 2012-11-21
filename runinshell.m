@@ -16,12 +16,12 @@
 }
 
 +(NSString *)runWithCommand:(NSString *)cmd {
-	runinshell *task;
+	NSTask *task;
 	task = [[NSTask alloc] init];
 	[task setLaunchPath: @"/bin/bash"];
 
 	NSArray *arguments;
-	arguments = [NSArray arrayWithObjects: @"-c", cmd, nil];
+	arguments = @[@"-c", cmd];
 	[task setArguments: arguments];
 
 	NSPipe *pipe;

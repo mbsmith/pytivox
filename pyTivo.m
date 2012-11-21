@@ -64,14 +64,14 @@
 	id memberObject;
 	
 	while ((memberObject = [e nextObject])) {
-		NSString *loctype = [typesArray objectAtIndex:[[memberObject objectForKey:@"Type"] intValue]];
+		NSString *loctype = typesArray[[memberObject[@"Type"] intValue]];
 		if ([loctype isEqual:@"video:stream"])
 			continue;
 		if ([loctype isEqual:@"video:pytivo"])
 			loctype = @"video";
-		fprintf(outfile, "[%s]\n", [[memberObject objectForKey:@"Name"] UTF8String]);
+		fprintf(outfile, "[%s]\n", [memberObject[@"Name"] UTF8String]);
 		fprintf(outfile, "type=%s\n", [loctype UTF8String] );
-		fprintf(outfile, "path=%s\n", [[memberObject objectForKey:@"Location"] UTF8String]);
+		fprintf(outfile, "path=%s\n", [memberObject[@"Location"] UTF8String]);
 		fprintf(outfile, "force_alpha=%s\n", [_defaults boolForKey:PREF_PYTIVO_SORT_ALPHA] ? "true" : "false");
 		printf("testing\n");
 		fprintf(outfile, "\n");
@@ -100,10 +100,11 @@
 	mkdir([logdir UTF8String], S_IRWXU|S_IRGRP|S_IROTH);
 
 	[task setLaunchPath:@"/usr/bin/python"];
-	[task setArguments:[NSArray arrayWithObjects:[myBundle pathForResource:@"pyTivo" ofType:@"py" inDirectory:@"pyTivo-wmcbrine"],
-											@"-c", configFile,
-											nil]];
-	[[NSFileManager defaultManager] createFileAtPath:logFile contents: @"" attributes: nil];
+	[task setArguments:@[[myBundle pathForResource:@"pyTivo" ofType:@"py" inDirectory:@"deps/pytivo"],
+											@"-c", configFile]];
+	[[NSFileManager defaultManager] createFileAtPath:logFile
+                                            contents:[@"" dataUsingEncoding:NSUTF8StringEncoding]
+                                          attributes:nil];
 	NSFileHandle *myoutput = [NSFileHandle fileHandleForWritingAtPath:logFile];
 	[task setStandardOutput:myoutput];
 	[task setStandardError:myoutput];
@@ -111,8 +112,8 @@
 	NSDictionary *old_env = [[NSProcessInfo processInfo] environment];
 	NSMutableDictionary *new_env = [NSMutableDictionary dictionaryWithCapacity:5];
 	[new_env addEntriesFromDictionary:old_env];
-	[new_env setObject:[[myBundle resourcePath] stringByAppendingString:@"/PIL"] forKey:@"PYTHONPATH"];
-	[new_env setObject:[myBundle resourcePath] forKey:@"DYLD_FALLBACK_LIBRARY_PATH"];
+	new_env[@"PYTHONPATH"] = [[myBundle resourcePath] stringByAppendingString:@"/PIL"];
+	new_env[@"DYLD_FALLBACK_LIBRARY_PATH"] = [myBundle resourcePath];
 	[task setEnvironment:new_env];
 	
 	[task launch];

@@ -12,8 +12,8 @@
 #ifdef HAVE_LSSHARED
 - (void)enableLoginItemWithLoginItemsReference:(LSSharedFileListRef )theLoginItemsRefs ForPath:(CFURLRef)thePath {
 	// We call LSSharedFileListInsertItemURL to insert the item at the bottom of Login Items list.
-	NSDictionary *props = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:(NSString *)kLSSharedFileListItemHidden];
-	LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(theLoginItemsRefs, kLSSharedFileListItemLast, NULL, NULL, thePath, (CFDictionaryRef)props, NULL);		
+	NSDictionary *props = [NSDictionary dictionaryWithObject:[NSNumber numberWithBool:YES] forKey:(__bridge NSString *)kLSSharedFileListItemHidden];
+	LSSharedFileListItemRef item = LSSharedFileListInsertItemURL(theLoginItemsRefs, kLSSharedFileListItemLast, NULL, NULL, thePath, (__bridge CFDictionaryRef)props, NULL);		
 	if (item)
 		CFRelease(item);
 }
@@ -23,16 +23,15 @@
 			
 	// We're going to grab the contents of the shared file list (LSSharedFileListItemRef objects)
 	// and pop it in an array so we can iterate through it to find our item.
-	NSArray  *loginItemsArray = (NSArray *)LSSharedFileListCopySnapshot(theLoginItemsRefs, &seedValue);
+	NSArray  *loginItemsArray = (NSArray *)CFBridgingRelease(LSSharedFileListCopySnapshot(theLoginItemsRefs, &seedValue));
 	for (id item in loginItemsArray) {		
-		LSSharedFileListItemRef itemRef = (LSSharedFileListItemRef)item;
+		LSSharedFileListItemRef itemRef = (__bridge LSSharedFileListItemRef)item;
 		if (LSSharedFileListItemResolve(itemRef, 0, (CFURLRef*) &thePath, NULL) == noErr) {
-			if ([[(NSURL *)thePath path] hasPrefix:pyTivoXApplicationPath])
+			if ([[(__bridge NSURL *)thePath path] hasPrefix:pyTivoXApplicationPath])
 				LSSharedFileListItemRemove(theLoginItemsRefs, itemRef); // Deleting the item
 		}
 	}
 	
-	[loginItemsArray release];
 }
 #endif
 @end
@@ -40,14 +39,10 @@
 @implementation Startup
 
 -(id)init {
-	defaults = [[NSUserDefaults standardUserDefaults] retain];
+	defaults = [NSUserDefaults standardUserDefaults];
 	return [super init];
 }
 
--(void) dealloc {
-	[defaults release];
-	[super dealloc];
-}
 
 - (IBAction)addLoginItem:(id)sender {
 
@@ -58,7 +53,7 @@
 	} else {
 		pyTivoXApplicationPath = [myBundle bundlePath];
 	}
-	CFURLRef url = (CFURLRef)[NSURL fileURLWithPath:pyTivoXApplicationPath];
+	CFURLRef url = (__bridge CFURLRef)[NSURL fileURLWithPath:pyTivoXApplicationPath];
 	
 	// Create a reference to the shared file list.
 	LSSharedFileListRef loginItems = LSSharedFileListCreate(NULL, kLSSharedFileListSessionLoginItems, NULL);

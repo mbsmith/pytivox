@@ -6,11 +6,11 @@
 //  Copyright 2009 home. All rights reserved.
 //
 
-#import "GeneralPrefsPaneController.h"
+#import "GeneralPrefsController.h"
 #import "pyTivoController.h"
 #import "Startup.h"
 
-@implementation GeneralPrefsPaneController
+@implementation GeneralPrefsController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

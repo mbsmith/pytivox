@@ -92,10 +92,10 @@
 	id memberObject;
 	int count=1;
 	while ((memberObject = [e nextObject])) {
-		NSString *loctype = [typesArray objectAtIndex:[[memberObject objectForKey:@"Type"] intValue]];
+		NSString *loctype = typesArray[[memberObject[@"Type"] intValue]];
 		if ([loctype isEqual:@"video"] || [loctype isEqual:@"video:stream"]) {
-			fprintf(outfile, "dir.%d=%s\n", count, [[memberObject objectForKey:@"Location"] UTF8String]);	
-			fprintf(outfile, "dir.%d.name=%s\n", count, [[memberObject objectForKey:@"Name"] UTF8String]);
+			fprintf(outfile, "dir.%d=%s\n", count, [memberObject[@"Location"] UTF8String]);	
+			fprintf(outfile, "dir.%d.name=%s\n", count, [memberObject[@"Name"] UTF8String]);
 			count++;
 		}
 	}
@@ -119,17 +119,21 @@
 	NSBundle *myBundle = [NSBundle mainBundle];
 	mkdir([cachedir UTF8String], S_IRWXU|S_IRGRP|S_IROTH);
 	mkdir([logdir UTF8String], S_IRWXU|S_IRGRP|S_IROTH);
+    NSLog(@"What's this? %@", [myBundle pathForResource:@"streambaby"
+                                                 ofType:@"jar"
+                                            inDirectory:@"deps/streambaby/jbin"]);
 	[task setCurrentDirectoryPath:@"/tmp"];
 	[task setLaunchPath:@"/usr/bin/java"];
-	[task setArguments:[NSArray arrayWithObjects:@"-Xmx256m",
+	[task setArguments:@[@"-Xmx256m",
 											@"-Djava.awt.headless=true",
 											@"-d32",
 											@"-jar",
-												[myBundle pathForResource:@"streambaby" ofType:@"jar" inDirectory:@"streambaby/jbin/"],
+												[myBundle pathForResource:@"streambaby" ofType:@"jar" inDirectory:@"deps/streambaby/jbin/"],
 											@"--config", configFile,
-											@"--config", userConfigFile,
-												nil]];
-	[[NSFileManager defaultManager] createFileAtPath:logFile contents: @"" attributes: nil];
+											@"--config", userConfigFile]];
+	[[NSFileManager defaultManager] createFileAtPath:logFile
+                                            contents:[@"" dataUsingEncoding:NSUTF8StringEncoding]
+                                          attributes:nil];
 	NSFileHandle *myoutput = [NSFileHandle fileHandleForWritingAtPath:logFile];
 	[task setStandardOutput:myoutput];
 	[task setStandardError:myoutput];
@@ -137,7 +141,7 @@
 	NSDictionary *old_env = [[NSProcessInfo processInfo] environment];
 	NSMutableDictionary *new_env = [NSMutableDictionary dictionaryWithCapacity:50];
 	[new_env addEntriesFromDictionary:old_env];
-	[new_env setObject:[myBundle resourcePath] forKey:@"DYLD_FALLBACK_LIBRARY_PATH"];
+	new_env[@"DYLD_FALLBACK_LIBRARY_PATH"] = [myBundle resourcePath];
 	[task setEnvironment:new_env];
 	
 	[task launch];

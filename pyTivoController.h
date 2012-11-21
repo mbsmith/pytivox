@@ -25,7 +25,7 @@
     NSWindowController *_preferencesWindowController;
 }
 
-@property (nonatomic, readonly) NSWindowController *preferencesWindowController;
+@property (weak, nonatomic, readonly) NSWindowController *preferencesWindowController;
 
 -(NSMutableArray *)DataList;
 

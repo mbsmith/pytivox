@@ -11,12 +11,6 @@
 
 @implementation TivoMenulet
 
--(void)dealloc
-{
-	[statusItem release];
-	[menuIcon release];
-	[super dealloc];
-}
 
 - (void)awakeFromNib
 {
@@ -25,11 +19,10 @@
 	menuIcon= [[NSImage alloc] initWithContentsOfFile:path];
 	
 	
-	statusItem = [[[NSStatusBar systemStatusBar] 
-								 statusItemWithLength:NSSquareStatusItemLength]
-								retain];
+	statusItem = [[NSStatusBar systemStatusBar] 
+								 statusItemWithLength:NSSquareStatusItemLength];
 	[statusItem setHighlightMode:YES];
-	[statusItem setTitle:[NSString stringWithString:@""]]; 
+	[statusItem setTitle:@""]; 
   
 	[statusItem setImage:menuIcon];
 	[statusItem setEnabled:YES];

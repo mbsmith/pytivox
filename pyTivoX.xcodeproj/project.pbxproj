@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -38,15 +38,14 @@
 		539820430EEDD17E0014CE74 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 539820360EEDD13D0014CE74 /* Sparkle.framework */; };
 		539820480EEDD3020014CE74 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 539820470EEDD3020014CE74 /* dsa_pub.pem */; };
 		539820880EEDDFD20014CE74 /* pyTivoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539820870EEDDFD20014CE74 /* pyTivoController.m */; };
-		53D84A980F86733000AB18C1 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84A970F86733000AB18C1 /* SS_PrefsController.m */; };
 		53D84D910F8731C800AB18C1 /* pyTivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D900F8731C800AB18C1 /* pyTivo.m */; };
 		53D84D950F87325300AB18C1 /* MasterProc.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D940F87325300AB18C1 /* MasterProc.m */; };
 		53D84D9B0F8732B300AB18C1 /* SB.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D9A0F8732B300AB18C1 /* SB.m */; };
-		594E241B165C84B100052DAE /* SBPrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594E241A165C84B100052DAE /* SBPrefsView.xib */; };
-		594E2422165C906300052DAE /* GeneralPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */; };
+		594E241B165C84B100052DAE /* StreamPrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594E241A165C84B100052DAE /* StreamPrefsView.xib */; };
+		594E2422165C906300052DAE /* GeneralPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AF60F86BA3A00AB18C1 /* GeneralPrefsController.m */; };
 		594E2436165C929400052DAE /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594E2433165C929400052DAE /* MASPreferencesWindow.xib */; };
 		594E2437165C929400052DAE /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594E2435165C929400052DAE /* MASPreferencesWindowController.m */; };
-		594E2438165C9F4E00052DAE /* SBPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594E241D165C88AE00052DAE /* SBPrefsPaneController.m */; };
+		594E2438165C9F4E00052DAE /* StreamPrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594E241D165C88AE00052DAE /* StreamPrefsController.m */; };
 		594E2439165CA0CB00052DAE /* pyTivoPrefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */; };
 		594E243E165CA34300052DAE /* GeneralPrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -104,13 +103,10 @@
 		539820470EEDD3020014CE74 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		539820860EEDDFD20014CE74 /* pyTivoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyTivoController.h; sourceTree = "<group>"; };
 		539820870EEDDFD20014CE74 /* pyTivoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pyTivoController.m; sourceTree = "<group>"; };
-		53D84A950F86733000AB18C1 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SS_PreferencePaneProtocol.h; path = SS_PrefsController/SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
-		53D84A960F86733000AB18C1 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SS_PrefsController.h; path = SS_PrefsController/SS_PrefsController.h; sourceTree = "<group>"; };
-		53D84A970F86733000AB18C1 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SS_PrefsController.m; path = SS_PrefsController/SS_PrefsController.m; sourceTree = "<group>"; };
 		53D84AE40F86B6FB00AB18C1 /* GeneralPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = GeneralPreferences.tiff; path = PrefsPane/GeneralPrefs/GeneralPreferences.tiff; sourceTree = "<group>"; };
-		53D84AE70F86B77100AB18C1 /* GeneralPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralPrefsPaneController.h; path = PrefsPane/GeneralPrefs/GeneralPrefsPaneController.h; sourceTree = "<group>"; };
+		53D84AE70F86B77100AB18C1 /* GeneralPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralPrefsController.h; path = PrefsPane/GeneralPrefs/GeneralPrefsController.h; sourceTree = "<group>"; };
 		53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneralPrefsView.xib; path = PrefsPane/GeneralPrefs/GeneralPrefsView.xib; sourceTree = "<group>"; };
-		53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralPrefsPaneController.m; path = PrefsPane/GeneralPrefs/GeneralPrefsPaneController.m; sourceTree = "<group>"; };
+		53D84AF60F86BA3A00AB18C1 /* GeneralPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralPrefsController.m; path = PrefsPane/GeneralPrefs/GeneralPrefsController.m; sourceTree = "<group>"; };
 		53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pyTivoPrefs.png; path = PrefsPane/pyTivoPrefs/pyTivoPrefs.png; sourceTree = "<group>"; };
 		53D84D8F0F8731C800AB18C1 /* pyTivo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyTivo.h; sourceTree = "<group>"; };
 		53D84D900F8731C800AB18C1 /* pyTivo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pyTivo.m; sourceTree = "<group>"; };
@@ -119,9 +115,9 @@
 		53D84D990F8732B300AB18C1 /* SB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB.h; sourceTree = "<group>"; };
 		53D84D9A0F8732B300AB18C1 /* SB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB.m; sourceTree = "<group>"; };
 		53D84E420F87475E00AB18C1 /* PrefConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefConstants.h; sourceTree = "<group>"; };
-		594E241A165C84B100052DAE /* SBPrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPrefsView.xib; sourceTree = "<group>"; };
-		594E241C165C88AD00052DAE /* SBPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPrefsPaneController.h; path = PrefsPane/SBPrefs/SBPrefsPaneController.h; sourceTree = "<group>"; };
-		594E241D165C88AE00052DAE /* SBPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPrefsPaneController.m; path = PrefsPane/SBPrefs/SBPrefsPaneController.m; sourceTree = "<group>"; };
+		594E241A165C84B100052DAE /* StreamPrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StreamPrefsView.xib; sourceTree = "<group>"; };
+		594E241C165C88AD00052DAE /* StreamPrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StreamPrefsController.h; path = PrefsPane/SBPrefs/StreamPrefsController.h; sourceTree = "<group>"; };
+		594E241D165C88AE00052DAE /* StreamPrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StreamPrefsController.m; path = PrefsPane/SBPrefs/StreamPrefsController.m; sourceTree = "<group>"; };
 		594E2432165C929400052DAE /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = ../../../build/MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
 		594E2433165C929400052DAE /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = ../../../build/MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		594E2434165C929400052DAE /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = ../../../build/MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
@@ -208,9 +204,6 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
-				53D84A950F86733000AB18C1 /* SS_PreferencePaneProtocol.h */,
-				53D84A960F86733000AB18C1 /* SS_PrefsController.h */,
-				53D84A970F86733000AB18C1 /* SS_PrefsController.m */,
 				32CA4F630368D1EE00C91783 /* pyTivoX_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -254,12 +247,12 @@
 				594E2433165C929400052DAE /* MASPreferencesWindow.xib */,
 				594E2434165C929400052DAE /* MASPreferencesWindowController.h */,
 				594E2435165C929400052DAE /* MASPreferencesWindowController.m */,
-				594E241C165C88AD00052DAE /* SBPrefsPaneController.h */,
-				594E241D165C88AE00052DAE /* SBPrefsPaneController.m */,
-				594E241A165C84B100052DAE /* SBPrefsView.xib */,
+				594E241C165C88AD00052DAE /* StreamPrefsController.h */,
+				594E241D165C88AE00052DAE /* StreamPrefsController.m */,
+				594E241A165C84B100052DAE /* StreamPrefsView.xib */,
 				53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */,
-				53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */,
-				53D84AE70F86B77100AB18C1 /* GeneralPrefsPaneController.h */,
+				53D84AF60F86BA3A00AB18C1 /* GeneralPrefsController.m */,
+				53D84AE70F86B77100AB18C1 /* GeneralPrefsController.h */,
 			);
 			name = MASPreferences;
 			sourceTree = "<group>";
@@ -292,8 +285,11 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "pyTivoX" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -327,7 +323,7 @@
 				537E0A550EF0390F007BC88F /* del.png in Resources */,
 				537E0B940EF0C17D007BC88F /* tivo_icon.png in Resources */,
 				53692A2D0EF49E2F006B6730 /* Credits.html in Resources */,
-				594E241B165C84B100052DAE /* SBPrefsView.xib in Resources */,
+				594E241B165C84B100052DAE /* StreamPrefsView.xib in Resources */,
 				594E2436165C929400052DAE /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "tar --exclude .git -c deps/pytivo | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\npython -mcompileall $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/pytivo\ntar --exclude .git -c deps/streambaby | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\necho -e \"com.unwiredappeal=debug\\ncom.tivo=debug\" > $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby/simplelog.properties\n\n";
+			shellScript = "tar --exclude .git -c deps/pytivo | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\npython -mcompileall $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/pytivo\ntar --exclude .git -c deps/streambaby | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\necho -e \"com.unwiredappeal=debug\\ncom.tivo=debug\" > $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby/simplelog.properties\ncd $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby\nant -buildfile build.xml\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,10 +372,9 @@
 				537E0B590EF0BC91007BC88F /* TivoMenulet.m in Sources */,
 				537E0BDF0EF0E61B007BC88F /* Startup.m in Sources */,
 				53692A380EF49F6C006B6730 /* runinshell.m in Sources */,
-				53D84A980F86733000AB18C1 /* SS_PrefsController.m in Sources */,
-				594E2422165C906300052DAE /* GeneralPrefsPaneController.m in Sources */,
+				594E2422165C906300052DAE /* GeneralPrefsController.m in Sources */,
 				53D84D910F8731C800AB18C1 /* pyTivo.m in Sources */,
-				594E2438165C9F4E00052DAE /* SBPrefsPaneController.m in Sources */,
+				594E2438165C9F4E00052DAE /* StreamPrefsController.m in Sources */,
 				53D84D950F87325300AB18C1 /* MasterProc.m in Sources */,
 				53D84D9B0F8732B300AB18C1 /* SB.m in Sources */,
 				594E2437165C929400052DAE /* MASPreferencesWindowController.m in Sources */,
@@ -419,6 +414,7 @@
 		537787E90EEF9341000E5476 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -429,9 +425,9 @@
 		537787EA0EEF9341000E5476 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = Distribution;
 				ZERO_LINK = NO;
 			};
@@ -441,13 +437,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -466,6 +464,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -493,7 +494,6 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
-				PREBINDING = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -506,7 +506,6 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				PREBINDING = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;

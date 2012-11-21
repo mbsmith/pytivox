@@ -7,8 +7,8 @@
 //
 
 #import "pyTivoController.h"
-#import "SBPrefsPaneController.h"
-#import "GeneralPrefsPaneController.h"
+#import "StreamPrefsController.h"
+#import "GeneralPrefsController.h"
 #import "MASPreferencesWindowController.h"
 
 @implementation pyTivoController
@@ -16,20 +16,18 @@
 -(void)awakeFromNib {
 	DataList = [NSMutableArray new];
 	NSArray *tempArray;
-	_defaults = [[NSUserDefaults standardUserDefaults] retain];
+	_defaults = [NSUserDefaults standardUserDefaults];
 	pyTivoTask = [[pyTivo alloc] init];
 	SBTask = [[SB alloc] init];
 	startupController = [[Startup alloc] init];
-	NSDictionary *appDefaults = [NSDictionary dictionaryWithObjectsAndKeys:
-															 [NSNumber numberWithBool:NO], PREF_LAUNCH_STARTUP,
-															 [NSNumber numberWithBool:YES], PREF_PYTIVO_BUTTON,
-															 [NSNumber numberWithBool:NO], PREF_PYTIVO_SORT_ALPHA,
-															 [NSNumber numberWithBool:YES], PREF_SB_BUTTON,
-															 [NSNumber numberWithBool:NO], PREF_SB_SORT_FILENAME,
-															 @"0", @"Version",
-															 @"", PREF_USERNAME,
-															 @"", PREF_PASSWORD,
-															 nil];
+	NSDictionary *appDefaults = @{PREF_LAUNCH_STARTUP: @NO,
+															 PREF_PYTIVO_BUTTON: @YES,
+															 PREF_PYTIVO_SORT_ALPHA: @NO,
+															 PREF_SB_BUTTON: @YES,
+															 PREF_SB_SORT_FILENAME: @NO,
+															 @"Version": @"0",
+															 PREF_USERNAME: @"",
+															 PREF_PASSWORD: @""};
 	[_defaults registerDefaults:appDefaults];
 	@try {
 		tempArray = [NSKeyedUnarchiver unarchiveObjectWithFile:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Application Support/pyTivoX/Shares.data"]];
@@ -61,7 +59,6 @@
 	[NSKeyedArchiver archiveRootObject:DataList
 					toFile:[NSHomeDirectory() stringByAppendingPathComponent:@"Library/Application Support/pyTivoX/Shares.data"]];
 	[_defaults setObject:[[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"] forKey:@"Version"];
-	[self release];
 }
 
 -(BOOL)windowShouldClose:(id)sender {
@@ -73,16 +70,13 @@
 	[pyTivoTask kill];
 	[SBTask kill];
 	[_defaults synchronize];
-	[DataList release];
-	[_defaults release];
-	[super dealloc];
 }
 
 - (NSWindowController *)preferencesWindowController {
     
     if (!_preferencesWindowController) {
-        SBPrefsPaneController *SBPref = [[SBPrefsPaneController alloc] init];
-        GeneralPrefsPaneController *genPref = [[GeneralPrefsPaneController alloc] init];
+        StreamPrefsController *SBPref = [[StreamPrefsController alloc] init];
+        GeneralPrefsController *genPref = [[GeneralPrefsController alloc] init];
         
         // Initialize preference window controller array.
         NSArray *controllers = @[[NSNull null], genPref, SBPref, [NSNull null]];
@@ -135,15 +129,14 @@
 	int result = [openPanel runModal];
 	if (result == NSOKButton) {
 		myDict = [NSMutableDictionary dictionaryWithObjects:
-							[NSArray arrayWithObjects:
-							 [[openPanel filenames] objectAtIndex:0],
-							 [NSNumber numberWithUnsignedInt:0],
-							 @"My Share",
-							 nil]
-						forKeys:[NSArray arrayWithObjects:@"Location", @"Type", @"Name", nil]];
+							@[[openPanel URLs][0],
+							 @0U,
+							 @"My Share"]
+						forKeys:@[@"Location", @"Type", @"Name"]];
 		[DataList addObject:myDict];
 		[myTableView reloadData];
-		[myTableView selectRow:([DataList count] -1) byExtendingSelection:NO];
+		[myTableView selectRowIndexes:[NSIndexSet indexSetWithIndex:([DataList count] - 1)]
+                 byExtendingSelection:NO];
 		[myTableView editColumn:2 row:([DataList count] -1) withEvent:nil select:YES];
 	}
 }
@@ -181,13 +174,13 @@
 -(id)tableView:(NSTableView *)tableView
            objectValueForTableColumn:(NSTableColumn *)tableColumn
 					 row:(int)row {
-	return [[DataList objectAtIndex:row] objectForKey:[tableColumn identifier]];
+	return DataList[row][[tableColumn identifier]];
 }
 
 - (void)tableView:(NSTableView *)tableView setObjectValue:(id)anObject
    forTableColumn:(NSTableColumn *)tableColumn row:(int)rowIndex
 {
-	[[DataList objectAtIndex:rowIndex] setObject:anObject forKey:[tableColumn identifier]];
+	DataList[rowIndex][[tableColumn identifier]] = anObject;
 	[myTableView reloadData];
 }
 

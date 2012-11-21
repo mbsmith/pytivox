@@ -6,10 +6,10 @@
 //  Copyright 2009 home. All rights reserved.
 //
 
-#import "SBPrefsPaneController.h"
+#import "StreamPrefsController.h"
 #import "pyTivoController.h"
 
-@implementation SBPrefsPaneController
+@implementation StreamPrefsController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,7 +28,7 @@
 
 - (NSString *)identifier
 {
-    return @"SBPrefsPaneController";
+    return @"StreamPrefsController";
 }
 
 - (NSImage *)toolbarItemImage

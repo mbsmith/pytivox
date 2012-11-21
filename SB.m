@@ -72,11 +72,6 @@
 	fprintf(outfile, "autogenerate.delete=true\n");
 	fprintf(outfile, "port=7290\n");
 	fprintf(outfile, "ip=%s\n", [ipbeacon UTF8String]);
-	fprintf(outfile, "ffmpeg.path=%s\n", [[myBundle pathForResource:@"ffmpeg" ofType:@"bin"] UTF8String]);
-	fprintf(outfile, "ffmpegjava.avutil=%s\n", [[myBundle pathForResource:@"libavutil" ofType:@"dylib"] UTF8String]);
-	fprintf(outfile, "ffmpegjava.avcodec=%s\n", [[myBundle pathForResource:@"libavcodec" ofType:@"dylib"] UTF8String]);
-	fprintf(outfile, "ffmpegjava.avformat=%s\n", [[myBundle pathForResource:@"libavformat" ofType:@"dylib"] UTF8String]);
-	fprintf(outfile, "ffmpegjava.swscale=%s\n", [[myBundle pathForResource:@"libswscale" ofType:@"dylib"] UTF8String]);
 	fprintf(outfile, "\n");
 	fprintf(outfile, "ffmpegexe.transcode=-acodec ac3 -vcodec mpeg2video -f vob -async 1 -r ${closest.mpeg.fps} -v 0 -threads %d\n", core_count);
 	fprintf(outfile, "ffmpegexe.transcode.sameqargs=-sameq -ab 384k -ar ${asamplerate}\n\n");

@@ -74,8 +74,8 @@
 			[runinshell runWithCommand:[NSString stringWithFormat:@"cp /%@.bak/Contents/Info-reg.plist /%@.bak/Contents/Info.plist", trimmedPath, trimmedPath]];
 			[runinshell runWithCommand:[NSString stringWithFormat:@"mv /%@.bak /%@", trimmedPath, trimmedPath]];
 		}
+        CFRelease(loginItems);
 	}
-	CFRelease(loginItems);
 #else
 	NSLog(@"Can't add login item\n");
 #endif

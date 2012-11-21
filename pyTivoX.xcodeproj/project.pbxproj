@@ -357,7 +357,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "tar --exclude .git -c deps/pytivo | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\npython -mcompileall $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/pytivo\ntar --exclude .git -c deps/streambaby | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\necho -e \"com.unwiredappeal=debug\\ncom.tivo=debug\" > $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby/simplelog.properties\ncd $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby\nant -buildfile build.xml\n\n";
+			shellScript = "\n# Copy, setup, and compile pytivo\ntar --exclude .git -c deps/pytivo | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\npython -mcompileall $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/pytivo\ntar --exclude .git -c deps/streambaby | tar -C $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/ -x\n\n# Copy, setup, and compile StreamBaby\necho -e \"com.unwiredappeal=debug\\ncom.tivo=debug\" > $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby/simplelog.properties\ncd $BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Resources/deps/streambaby\nif [ ! -d \"./jbin\" ]\nthen\n    ant -buildfile build.xml\nfi\n\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

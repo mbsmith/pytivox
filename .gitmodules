@@ -1,3 +1,6 @@
-[submodule "deps/ffmpeg"]
-	path = deps/ffmpeg
-	url = git://source.ffmpeg.org/ffmpeg.git
+[submodule "deps/pytivo"]
+	path = deps/pytivo
+	url = https://github.com/wmcbrine/pytivo.git
+[submodule "deps/streambaby"]
+	path = deps/streambaby
+	url = https://code.google.com/p/streambaby/

@@ -12,27 +12,35 @@
 
 @implementation GeneralPrefsPaneController
 
-- (BOOL) LaunchStartup {
-	return [[_controller getGlobalDefaults] boolForKey:PREF_LAUNCH_STARTUP];
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Initialization code here.
+    }
+    
+    return self;
 }
 
-- (void) setLaunchStartup:(BOOL) checkBox {
-	[[_controller getGlobalDefaults] setBool:checkBox forKey:PREF_LAUNCH_STARTUP];
-	[[_controller getStartup] addLoginItem:nil];
+- (id)init
+{
+    return [self initWithNibName:@"GeneralPrefsView" bundle:[NSBundle mainBundle]];
 }
 
-- (NSString *) pyTivoUsername {
-	return [[_controller getGlobalDefaults] stringForKey:PREF_USERNAME];
-}
-- (void) setPyTivoUsername:(NSString *)username {
-	[[_controller getGlobalDefaults] setObject:username forKey:PREF_USERNAME];
+- (NSString *)identifier
+{
+    return @"GeneralPrefsController";
 }
 
-- (NSString *) pyTivoPassword {
-	return [[_controller getGlobalDefaults] stringForKey:PREF_PASSWORD];
+- (NSImage *)toolbarItemImage
+{
+    return [NSImage imageNamed:NSImageNamePreferencesGeneral];
 }
-- (void) setPyTivoPassword:(NSString *) password {
-	[[_controller getGlobalDefaults] setObject:password forKey:PREF_PASSWORD];
+
+- (NSString *)toolbarItemLabel
+{
+    return NSLocalizedString(@"General", @"Toolbar item name for the credentials preference pane");
 }
+
 
 @end

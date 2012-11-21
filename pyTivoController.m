@@ -7,6 +7,9 @@
 //
 
 #import "pyTivoController.h"
+#import "SBPrefsPaneController.h"
+#import "GeneralPrefsPaneController.h"
+#import "MASPreferencesWindowController.h"
 
 @implementation pyTivoController
 
@@ -23,9 +26,9 @@
 															 [NSNumber numberWithBool:NO], PREF_PYTIVO_SORT_ALPHA,
 															 [NSNumber numberWithBool:YES], PREF_SB_BUTTON,
 															 [NSNumber numberWithBool:NO], PREF_SB_SORT_FILENAME,
-															 [NSString stringWithString:@"0"], @"Version",
-															 [NSString stringWithString:@""], PREF_USERNAME,
-															 [NSString stringWithString:@""], PREF_PASSWORD,
+															 @"0", @"Version",
+															 @"", PREF_USERNAME,
+															 @"", PREF_PASSWORD,
 															 nil];
 	[_defaults registerDefaults:appDefaults];
 	@try {
@@ -71,12 +74,30 @@
 	[SBTask kill];
 	[_defaults synchronize];
 	[DataList release];
-	[_prefsController release];
 	[_defaults release];
 	[super dealloc];
 }
 
+- (NSWindowController *)preferencesWindowController {
+    
+    if (!_preferencesWindowController) {
+        SBPrefsPaneController *SBPref = [[SBPrefsPaneController alloc] init];
+        GeneralPrefsPaneController *genPref = [[GeneralPrefsPaneController alloc] init];
+        
+        // Initialize preference window controller array.
+        NSArray *controllers = @[[NSNull null], genPref, SBPref, [NSNull null]];
+        
+        _preferencesWindowController = [[MASPreferencesWindowController alloc]
+                                        initWithViewControllers:controllers
+                                        title:@"Preferences"];
+    }
+    
+    return _preferencesWindowController;
+}
+
 - (IBAction) showPreferences:(id) sender{
+    [self.preferencesWindowController showWindow:nil];
+#if 0
 	if(! _prefsController){
 		NSString *path = nil;
 		NSString *ext = nil;
@@ -90,8 +111,8 @@
 	}
 	
 	[_prefsController showPreferencesWindow];
+#endif
 }
-
 
 -(IBAction)startButton:(id)sender {
 	[pyTivoTask kill];

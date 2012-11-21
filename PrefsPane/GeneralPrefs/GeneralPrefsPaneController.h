@@ -7,19 +7,8 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "PrefPaneController.h"
+#import "MASPreferencesViewController.h"
 #import "Startup.h"
 
-@interface GeneralPrefsPaneController : PrefPaneController {
-}
-
-- (BOOL) LaunchStartup;
-- (void) setLaunchStartup:(BOOL) checkBox;
-
-- (NSString *) pyTivoUsername;
-- (void) setPyTivoUsername:(NSString *) username;
-
-- (NSString *) pyTivoPassword;
-- (void) setPyTivoPassword:(NSString *) password;
-
+@interface GeneralPrefsPaneController : NSViewController <MASPreferencesViewController>
 @end

@@ -10,7 +10,6 @@
 #import <WebKit/WebKit.h>
 #import "runinshell.h"
 #import "Startup.h"
-#import "PrefController.h"
 #import "pyTivo.h"
 #import "SB.h"
 
@@ -23,8 +22,10 @@
 	pyTivo *pyTivoTask;
 	BOOL windowNeedsOpening;
 	NSUserDefaults *_defaults;
-	PrefController *_prefsController;
+    NSWindowController *_preferencesWindowController;
 }
+
+@property (nonatomic, readonly) NSWindowController *preferencesWindowController;
 
 -(NSMutableArray *)DataList;
 

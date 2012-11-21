@@ -39,29 +39,16 @@
 		539820480EEDD3020014CE74 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 539820470EEDD3020014CE74 /* dsa_pub.pem */; };
 		539820880EEDDFD20014CE74 /* pyTivoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 539820870EEDDFD20014CE74 /* pyTivoController.m */; };
 		53D84A980F86733000AB18C1 /* SS_PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84A970F86733000AB18C1 /* SS_PrefsController.m */; };
-		53D84AA70F86752C00AB18C1 /* PrefController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AA60F86752C00AB18C1 /* PrefController.m */; };
-		53D84AE20F86B63C00AB18C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		53D84AE50F86B6FB00AB18C1 /* GeneralPreferences.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 53D84AE40F86B6FB00AB18C1 /* GeneralPreferences.tiff */; };
-		53D84AEF0F86B85B00AB18C1 /* GeneralPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D84AEE0F86B85B00AB18C1 /* GeneralPrefs.xib */; };
-		53D84AF70F86BA3A00AB18C1 /* GeneralPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */; };
-		53D84AFB0F86BA7700AB18C1 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */; };
-		53D84B680F86C17E00AB18C1 /* GeneralPrefs.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53D84AD90F868CE000AB18C1 /* GeneralPrefs.bundle */; };
-		53D84C400F86CC6D00AB18C1 /* SBPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D84BF80F86CB1C00AB18C1 /* SBPrefs.xib */; };
-		53D84C440F86CC6D00AB18C1 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */; };
-		53D84C450F86CC6D00AB18C1 /* SBPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84BFC0F86CB1C00AB18C1 /* SBPrefsPaneController.m */; };
-		53D84C490F86CC6D00AB18C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		53D84C560F86CCA800AB18C1 /* pyTivoPrefs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D84BF20F86CAFD00AB18C1 /* pyTivoPrefs.xib */; };
-		53D84C5C0F86CCA800AB18C1 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */; };
-		53D84C610F86CCA800AB18C1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		53D84C9D0F86CDCB00AB18C1 /* GeneralPrefs.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53D84C4D0F86CC6D00AB18C1 /* GeneralPrefs.bundle */; };
-		53D84C9E0F86CDCB00AB18C1 /* GeneralPrefs.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = 53D84C650F86CCA800AB18C1 /* GeneralPrefs.bundle */; };
-		53D84CBF0F86CF0D00AB18C1 /* PrefPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */; };
-		53D84CDC0F86CFC100AB18C1 /* pyTivoPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84BF60F86CAFD00AB18C1 /* pyTivoPrefsPaneController.m */; };
-		53D84CEE0F8707B000AB18C1 /* pyTivoPrefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */; };
-		53D84CF00F8707C500AB18C1 /* SBPrefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D84CEF0F8707C500AB18C1 /* SBPrefs.png */; };
 		53D84D910F8731C800AB18C1 /* pyTivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D900F8731C800AB18C1 /* pyTivo.m */; };
 		53D84D950F87325300AB18C1 /* MasterProc.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D940F87325300AB18C1 /* MasterProc.m */; };
 		53D84D9B0F8732B300AB18C1 /* SB.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84D9A0F8732B300AB18C1 /* SB.m */; };
+		594E241B165C84B100052DAE /* SBPrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594E241A165C84B100052DAE /* SBPrefsView.xib */; };
+		594E2422165C906300052DAE /* GeneralPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */; };
+		594E2436165C929400052DAE /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594E2433165C929400052DAE /* MASPreferencesWindow.xib */; };
+		594E2437165C929400052DAE /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594E2435165C929400052DAE /* MASPreferencesWindowController.m */; };
+		594E2438165C9F4E00052DAE /* SBPrefsPaneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594E241D165C88AE00052DAE /* SBPrefsPaneController.m */; };
+		594E2439165CA0CB00052DAE /* pyTivoPrefs.png in Resources */ = {isa = PBXBuildFile; fileRef = 53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */; };
+		594E243E165CA34300052DAE /* GeneralPrefsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -75,27 +62,6 @@
 			remoteGlobalIDString = 8D1107260486CEB800E47090;
 			remoteInfo = pyTivoX;
 		};
-		53D84ADE0F868D1E00AB18C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D84AD80F868CE000AB18C1;
-			remoteInfo = GeneralPrefs;
-		};
-		53D84C6E0F86CDB700AB18C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D84C3B0F86CC6D00AB18C1;
-			remoteInfo = SBPrefs;
-		};
-		53D84C720F86CDBB00AB18C1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 53D84C530F86CCA800AB18C1;
-			remoteInfo = pyTivoPrefs;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -106,18 +72,6 @@
 			dstSubfolderSpec = 10;
 			files = (
 				539820430EEDD17E0014CE74 /* Sparkle.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84BBA0F86C66400AB18C1 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				53D84C9D0F86CDCB00AB18C1 /* GeneralPrefs.bundle in CopyFiles */,
-				53D84C9E0F86CDCB00AB18C1 /* GeneralPrefs.bundle in CopyFiles */,
-				53D84B680F86C17E00AB18C1 /* GeneralPrefs.bundle in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,28 +107,11 @@
 		53D84A950F86733000AB18C1 /* SS_PreferencePaneProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SS_PreferencePaneProtocol.h; path = SS_PrefsController/SS_PreferencePaneProtocol.h; sourceTree = "<group>"; };
 		53D84A960F86733000AB18C1 /* SS_PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SS_PrefsController.h; path = SS_PrefsController/SS_PrefsController.h; sourceTree = "<group>"; };
 		53D84A970F86733000AB18C1 /* SS_PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SS_PrefsController.m; path = SS_PrefsController/SS_PrefsController.m; sourceTree = "<group>"; };
-		53D84AA50F86752C00AB18C1 /* PrefController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefController.h; sourceTree = "<group>"; };
-		53D84AA60F86752C00AB18C1 /* PrefController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrefController.m; sourceTree = "<group>"; };
-		53D84AD90F868CE000AB18C1 /* GeneralPrefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralPrefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D84AE40F86B6FB00AB18C1 /* GeneralPreferences.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = GeneralPreferences.tiff; path = PrefsPane/GeneralPrefs/GeneralPreferences.tiff; sourceTree = "<group>"; };
 		53D84AE70F86B77100AB18C1 /* GeneralPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeneralPrefsPaneController.h; path = PrefsPane/GeneralPrefs/GeneralPrefsPaneController.h; sourceTree = "<group>"; };
-		53D84AEE0F86B85B00AB18C1 /* GeneralPrefs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneralPrefs.xib; path = PrefsPane/GeneralPrefs/GeneralPrefs.xib; sourceTree = "<group>"; };
+		53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = GeneralPrefsView.xib; path = PrefsPane/GeneralPrefs/GeneralPrefsView.xib; sourceTree = "<group>"; };
 		53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeneralPrefsPaneController.m; path = PrefsPane/GeneralPrefs/GeneralPrefsPaneController.m; sourceTree = "<group>"; };
-		53D84AF90F86BA7700AB18C1 /* PrefPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefPaneController.h; path = PrefsPane/PrefPaneController.h; sourceTree = "<group>"; };
-		53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrefPaneController.m; path = PrefsPane/PrefPaneController.m; sourceTree = "<group>"; };
-		53D84B400F86BFA800AB18C1 /* GeneralPrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GeneralPrefs-Info.plist"; path = "PrefsPane/GeneralPrefs/GeneralPrefs-Info.plist"; sourceTree = "<group>"; };
-		53D84BF20F86CAFD00AB18C1 /* pyTivoPrefs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = pyTivoPrefs.xib; path = PrefsPane/pyTivoPrefs/pyTivoPrefs.xib; sourceTree = "<group>"; };
-		53D84BF30F86CAFD00AB18C1 /* pyTivoPrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "pyTivoPrefs-Info.plist"; path = "PrefsPane/pyTivoPrefs/pyTivoPrefs-Info.plist"; sourceTree = "<group>"; };
-		53D84BF50F86CAFD00AB18C1 /* pyTivoPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pyTivoPrefsPaneController.h; path = PrefsPane/pyTivoPrefs/pyTivoPrefsPaneController.h; sourceTree = "<group>"; };
-		53D84BF60F86CAFD00AB18C1 /* pyTivoPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pyTivoPrefsPaneController.m; path = PrefsPane/pyTivoPrefs/pyTivoPrefsPaneController.m; sourceTree = "<group>"; };
-		53D84BF80F86CB1C00AB18C1 /* SBPrefs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SBPrefs.xib; path = PrefsPane/SBPrefs/SBPrefs.xib; sourceTree = "<group>"; };
-		53D84BF90F86CB1C00AB18C1 /* SBPrefs-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "SBPrefs-Info.plist"; path = "PrefsPane/SBPrefs/SBPrefs-Info.plist"; sourceTree = "<group>"; };
-		53D84BFB0F86CB1C00AB18C1 /* SBPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPrefsPaneController.h; path = PrefsPane/SBPrefs/SBPrefsPaneController.h; sourceTree = "<group>"; };
-		53D84BFC0F86CB1C00AB18C1 /* SBPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPrefsPaneController.m; path = PrefsPane/SBPrefs/SBPrefsPaneController.m; sourceTree = "<group>"; };
-		53D84C4D0F86CC6D00AB18C1 /* GeneralPrefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralPrefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		53D84C650F86CCA800AB18C1 /* GeneralPrefs.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeneralPrefs.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pyTivoPrefs.png; path = PrefsPane/pyTivoPrefs/pyTivoPrefs.png; sourceTree = "<group>"; };
-		53D84CEF0F8707C500AB18C1 /* SBPrefs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SBPrefs.png; path = PrefsPane/SBPrefs/SBPrefs.png; sourceTree = "<group>"; };
 		53D84D8F0F8731C800AB18C1 /* pyTivo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pyTivo.h; sourceTree = "<group>"; };
 		53D84D900F8731C800AB18C1 /* pyTivo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pyTivo.m; sourceTree = "<group>"; };
 		53D84D930F87325300AB18C1 /* MasterProc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MasterProc.h; sourceTree = "<group>"; };
@@ -182,35 +119,18 @@
 		53D84D990F8732B300AB18C1 /* SB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SB.h; sourceTree = "<group>"; };
 		53D84D9A0F8732B300AB18C1 /* SB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SB.m; sourceTree = "<group>"; };
 		53D84E420F87475E00AB18C1 /* PrefConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefConstants.h; sourceTree = "<group>"; };
+		594E241A165C84B100052DAE /* SBPrefsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBPrefsView.xib; sourceTree = "<group>"; };
+		594E241C165C88AD00052DAE /* SBPrefsPaneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SBPrefsPaneController.h; path = PrefsPane/SBPrefs/SBPrefsPaneController.h; sourceTree = "<group>"; };
+		594E241D165C88AE00052DAE /* SBPrefsPaneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SBPrefsPaneController.m; path = PrefsPane/SBPrefs/SBPrefsPaneController.m; sourceTree = "<group>"; };
+		594E2432165C929400052DAE /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = ../../../build/MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
+		594E2433165C929400052DAE /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = ../../../build/MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		594E2434165C929400052DAE /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = ../../../build/MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		594E2435165C929400052DAE /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = ../../../build/MASPreferences/MASPreferencesWindowController.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* pyTivoX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pyTivoX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		53D84AD70F868CE000AB18C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84AE20F86B63C00AB18C1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C480F86CC6D00AB18C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84C490F86CC6D00AB18C1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C600F86CCA800AB18C1 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84C610F86CCA800AB18C1 /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D11072E0486CEB800E47090 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -235,8 +155,6 @@
 				539820860EEDDFD20014CE74 /* pyTivoController.h */,
 				53692A360EF49F6C006B6730 /* runinshell.h */,
 				53692A370EF49F6C006B6730 /* runinshell.m */,
-				53D84AA50F86752C00AB18C1 /* PrefController.h */,
-				53D84AA60F86752C00AB18C1 /* PrefController.m */,
 				53D84D8F0F8731C800AB18C1 /* pyTivo.h */,
 				53D84D900F8731C800AB18C1 /* pyTivo.m */,
 				53D84D930F87325300AB18C1 /* MasterProc.h */,
@@ -270,9 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* pyTivoX.app */,
-				53D84AD90F868CE000AB18C1 /* GeneralPrefs.bundle */,
-				53D84C4D0F86CC6D00AB18C1 /* GeneralPrefs.bundle */,
-				53D84C650F86CCA800AB18C1 /* GeneralPrefs.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,7 +195,7 @@
 		29B97314FDCFA39411CA2CEA /* pyTivoX */ = {
 			isa = PBXGroup;
 			children = (
-				53D84AD20F868C9100AB18C1 /* PrefsPane */,
+				594E2431165C927300052DAE /* MASPreferences */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -313,6 +228,8 @@
 				537E0A4B0EF0388D007BC88F /* exit.png */,
 				537787D60EEF90A6000E5476 /* pyTivoX.html */,
 				537787D10EEF8C04000E5476 /* pyTivoX.icns */,
+				53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */,
+				53D84AE40F86B6FB00AB18C1 /* GeneralPreferences.tiff */,
 				539820470EEDD3020014CE74 /* dsa_pub.pem */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -330,108 +247,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		53D84AD20F868C9100AB18C1 /* PrefsPane */ = {
+		594E2431165C927300052DAE /* MASPreferences */ = {
 			isa = PBXGroup;
 			children = (
-				53D84BF70F86CB0700AB18C1 /* SBPrefs */,
-				53D84BF10F86CAE000AB18C1 /* pyTivoPrefs */,
-				53D84AFA0F86BA7700AB18C1 /* PrefPaneController.m */,
-				53D84AF90F86BA7700AB18C1 /* PrefPaneController.h */,
-				53D84AD30F868CAA00AB18C1 /* GeneralPrefs */,
-			);
-			name = PrefsPane;
-			sourceTree = "<group>";
-		};
-		53D84AD30F868CAA00AB18C1 /* GeneralPrefs */ = {
-			isa = PBXGroup;
-			children = (
-				53D84B400F86BFA800AB18C1 /* GeneralPrefs-Info.plist */,
-				53D84AEE0F86B85B00AB18C1 /* GeneralPrefs.xib */,
+				594E2432165C929400052DAE /* MASPreferencesViewController.h */,
+				594E2433165C929400052DAE /* MASPreferencesWindow.xib */,
+				594E2434165C929400052DAE /* MASPreferencesWindowController.h */,
+				594E2435165C929400052DAE /* MASPreferencesWindowController.m */,
+				594E241C165C88AD00052DAE /* SBPrefsPaneController.h */,
+				594E241D165C88AE00052DAE /* SBPrefsPaneController.m */,
+				594E241A165C84B100052DAE /* SBPrefsView.xib */,
+				53D84AEE0F86B85B00AB18C1 /* GeneralPrefsView.xib */,
 				53D84AF60F86BA3A00AB18C1 /* GeneralPrefsPaneController.m */,
-				53D84AE40F86B6FB00AB18C1 /* GeneralPreferences.tiff */,
 				53D84AE70F86B77100AB18C1 /* GeneralPrefsPaneController.h */,
 			);
-			name = GeneralPrefs;
-			sourceTree = "<group>";
-		};
-		53D84BF10F86CAE000AB18C1 /* pyTivoPrefs */ = {
-			isa = PBXGroup;
-			children = (
-				53D84CED0F8707B000AB18C1 /* pyTivoPrefs.png */,
-				53D84BF20F86CAFD00AB18C1 /* pyTivoPrefs.xib */,
-				53D84BF30F86CAFD00AB18C1 /* pyTivoPrefs-Info.plist */,
-				53D84BF50F86CAFD00AB18C1 /* pyTivoPrefsPaneController.h */,
-				53D84BF60F86CAFD00AB18C1 /* pyTivoPrefsPaneController.m */,
-			);
-			name = pyTivoPrefs;
-			sourceTree = "<group>";
-		};
-		53D84BF70F86CB0700AB18C1 /* SBPrefs */ = {
-			isa = PBXGroup;
-			children = (
-				53D84CEF0F8707C500AB18C1 /* SBPrefs.png */,
-				53D84BF80F86CB1C00AB18C1 /* SBPrefs.xib */,
-				53D84BF90F86CB1C00AB18C1 /* SBPrefs-Info.plist */,
-				53D84BFB0F86CB1C00AB18C1 /* SBPrefsPaneController.h */,
-				53D84BFC0F86CB1C00AB18C1 /* SBPrefsPaneController.m */,
-			);
-			name = SBPrefs;
+			name = MASPreferences;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		53D84AD80F868CE000AB18C1 /* GeneralPrefs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53D84ADD0F868CE100AB18C1 /* Build configuration list for PBXNativeTarget "GeneralPrefs" */;
-			buildPhases = (
-				53D84AD50F868CE000AB18C1 /* Resources */,
-				53D84AD60F868CE000AB18C1 /* Sources */,
-				53D84AD70F868CE000AB18C1 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = GeneralPrefs;
-			productName = GeneralPrefs;
-			productReference = 53D84AD90F868CE000AB18C1 /* GeneralPrefs.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		53D84C3B0F86CC6D00AB18C1 /* SBPrefs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53D84C4A0F86CC6D00AB18C1 /* Build configuration list for PBXNativeTarget "SBPrefs" */;
-			buildPhases = (
-				53D84C3C0F86CC6D00AB18C1 /* Resources */,
-				53D84C430F86CC6D00AB18C1 /* Sources */,
-				53D84C480F86CC6D00AB18C1 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SBPrefs;
-			productName = GeneralPrefs;
-			productReference = 53D84C4D0F86CC6D00AB18C1 /* GeneralPrefs.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		53D84C530F86CCA800AB18C1 /* pyTivoPrefs */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 53D84C620F86CCA800AB18C1 /* Build configuration list for PBXNativeTarget "pyTivoPrefs" */;
-			buildPhases = (
-				53D84C540F86CCA800AB18C1 /* Resources */,
-				53D84C5B0F86CCA800AB18C1 /* Sources */,
-				53D84C600F86CCA800AB18C1 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = pyTivoPrefs;
-			productName = GeneralPrefs;
-			productReference = 53D84C650F86CCA800AB18C1 /* GeneralPrefs.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		8D1107260486CEB800E47090 /* pyTivoX */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "pyTivoX" */;
@@ -441,14 +276,10 @@
 				53DD17340F19E2E7000323A8 /* ShellScript */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				539820460EEDD1890014CE74 /* CopyFiles */,
-				53D84BBA0F86C66400AB18C1 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				53D84C730F86CDBB00AB18C1 /* PBXTargetDependency */,
-				53D84C6F0F86CDB700AB18C1 /* PBXTargetDependency */,
-				53D84ADF0F868D1E00AB18C1 /* PBXTargetDependency */,
 			);
 			name = pyTivoX;
 			productInstallPath = "$(HOME)/Applications";
@@ -474,41 +305,11 @@
 			targets = (
 				8D1107260486CEB800E47090 /* pyTivoX */,
 				537787E80EEF9341000E5476 /* Distribution */,
-				53D84AD80F868CE000AB18C1 /* GeneralPrefs */,
-				53D84C3B0F86CC6D00AB18C1 /* SBPrefs */,
-				53D84C530F86CCA800AB18C1 /* pyTivoPrefs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		53D84AD50F868CE000AB18C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84AE50F86B6FB00AB18C1 /* GeneralPreferences.tiff in Resources */,
-				53D84AEF0F86B85B00AB18C1 /* GeneralPrefs.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C3C0F86CC6D00AB18C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84C400F86CC6D00AB18C1 /* SBPrefs.xib in Resources */,
-				53D84CF00F8707C500AB18C1 /* SBPrefs.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C540F86CCA800AB18C1 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84C560F86CCA800AB18C1 /* pyTivoPrefs.xib in Resources */,
-				53D84CEE0F8707B000AB18C1 /* pyTivoPrefs.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D1107290486CEB800E47090 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -519,11 +320,15 @@
 				537787D20EEF8C04000E5476 /* pyTivoX.icns in Resources */,
 				537787D70EEF90A6000E5476 /* pyTivoX.html in Resources */,
 				537E0A4D0EF0388D007BC88F /* reload.png in Resources */,
+				594E243E165CA34300052DAE /* GeneralPrefsView.xib in Resources */,
 				537E0A4F0EF0388D007BC88F /* exit.png in Resources */,
 				537E0A540EF0390F007BC88F /* add.png in Resources */,
+				594E2439165CA0CB00052DAE /* pyTivoPrefs.png in Resources */,
 				537E0A550EF0390F007BC88F /* del.png in Resources */,
 				537E0B940EF0C17D007BC88F /* tivo_icon.png in Resources */,
 				53692A2D0EF49E2F006B6730 /* Credits.html in Resources */,
+				594E241B165C84B100052DAE /* SBPrefsView.xib in Resources */,
+				594E2436165C929400052DAE /* MASPreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -562,33 +367,6 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		53D84AD60F868CE000AB18C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84CBF0F86CF0D00AB18C1 /* PrefPaneController.m in Sources */,
-				53D84AF70F86BA3A00AB18C1 /* GeneralPrefsPaneController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C430F86CC6D00AB18C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84C440F86CC6D00AB18C1 /* PrefPaneController.m in Sources */,
-				53D84C450F86CC6D00AB18C1 /* SBPrefsPaneController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		53D84C5B0F86CCA800AB18C1 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				53D84CDC0F86CFC100AB18C1 /* pyTivoPrefsPaneController.m in Sources */,
-				53D84C5C0F86CCA800AB18C1 /* PrefPaneController.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8D11072C0486CEB800E47090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -599,11 +377,12 @@
 				537E0BDF0EF0E61B007BC88F /* Startup.m in Sources */,
 				53692A380EF49F6C006B6730 /* runinshell.m in Sources */,
 				53D84A980F86733000AB18C1 /* SS_PrefsController.m in Sources */,
-				53D84AA70F86752C00AB18C1 /* PrefController.m in Sources */,
-				53D84AFB0F86BA7700AB18C1 /* PrefPaneController.m in Sources */,
+				594E2422165C906300052DAE /* GeneralPrefsPaneController.m in Sources */,
 				53D84D910F8731C800AB18C1 /* pyTivo.m in Sources */,
+				594E2438165C9F4E00052DAE /* SBPrefsPaneController.m in Sources */,
 				53D84D950F87325300AB18C1 /* MasterProc.m in Sources */,
 				53D84D9B0F8732B300AB18C1 /* SB.m in Sources */,
+				594E2437165C929400052DAE /* MASPreferencesWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,21 +393,6 @@
 			isa = PBXTargetDependency;
 			target = 8D1107260486CEB800E47090 /* pyTivoX */;
 			targetProxy = 537788000EEF940C000E5476 /* PBXContainerItemProxy */;
-		};
-		53D84ADF0F868D1E00AB18C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53D84AD80F868CE000AB18C1 /* GeneralPrefs */;
-			targetProxy = 53D84ADE0F868D1E00AB18C1 /* PBXContainerItemProxy */;
-		};
-		53D84C6F0F86CDB700AB18C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53D84C3B0F86CC6D00AB18C1 /* SBPrefs */;
-			targetProxy = 53D84C6E0F86CDB700AB18C1 /* PBXContainerItemProxy */;
-		};
-		53D84C730F86CDBB00AB18C1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 53D84C530F86CCA800AB18C1 /* pyTivoPrefs */;
-			targetProxy = 53D84C720F86CDBB00AB18C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -669,156 +433,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
 				PRODUCT_NAME = Distribution;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		53D84ADB0F868CE100AB18C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/GeneralPrefs/GeneralPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = GeneralPrefs;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		53D84ADC0F868CE100AB18C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/GeneralPrefs/GeneralPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = GeneralPrefs;
-				WRAPPER_EXTENSION = preferencePane;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		53D84C4B0F86CC6D00AB18C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/SBPrefs/SBPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = GeneralPrefs;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		53D84C4C0F86CC6D00AB18C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/SBPrefs/SBPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = SBPrefs;
-				WRAPPER_EXTENSION = preferencePane;
-				ZERO_LINK = NO;
-			};
-			name = Release;
-		};
-		53D84C630F86CCA800AB18C1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_FIX_AND_CONTINUE = YES;
-				GCC_MODEL_TUNING = G5;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/pyTivoPrefs/pyTivoPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = GeneralPrefs;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		53D84C640F86CCA800AB18C1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_ENABLE_FIX_AND_CONTINUE = NO;
-				GCC_MODEL_TUNING = G5;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
-				INFOPLIST_FILE = "$(SRCROOT)/PrefsPane/pyTivoPrefs/pyTivoPrefs-Info.plist";
-				INSTALL_PATH = "$(HOME)/Library/Bundles";
-				OTHER_LDFLAGS = (
-					"-framework",
-					Foundation,
-					"-framework",
-					AppKit,
-				);
-				PREBINDING = NO;
-				PRODUCT_NAME = pyTivoPrefs;
-				WRAPPER_EXTENSION = preferencePane;
 				ZERO_LINK = NO;
 			};
 			name = Release;
@@ -905,33 +519,6 @@
 			buildConfigurations = (
 				537787E90EEF9341000E5476 /* Debug */,
 				537787EA0EEF9341000E5476 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53D84ADD0F868CE100AB18C1 /* Build configuration list for PBXNativeTarget "GeneralPrefs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53D84ADB0F868CE100AB18C1 /* Debug */,
-				53D84ADC0F868CE100AB18C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53D84C4A0F86CC6D00AB18C1 /* Build configuration list for PBXNativeTarget "SBPrefs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53D84C4B0F86CC6D00AB18C1 /* Debug */,
-				53D84C4C0F86CC6D00AB18C1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		53D84C620F86CCA800AB18C1 /* Build configuration list for PBXNativeTarget "pyTivoPrefs" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				53D84C630F86CCA800AB18C1 /* Debug */,
-				53D84C640F86CCA800AB18C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

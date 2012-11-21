@@ -7,15 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "PrefPaneController.h"
+#import "MASPreferencesViewController.h"
 
-@interface SBPrefsPaneController : PrefPaneController {
-
-}
-
-- (BOOL) SBEnabled;
-- (void) setSBEnabled:(BOOL) checkBox;
-
-- (BOOL) SBSortFilename;
-- (void) setSBSortFilename:(BOOL) checkBox;
+@interface SBPrefsPaneController : NSViewController <MASPreferencesViewController>
 @end
